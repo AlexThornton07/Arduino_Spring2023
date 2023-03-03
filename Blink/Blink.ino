@@ -37,5 +37,10 @@ void loop() {
   digitalWrite(12, HIGH);   // turn the pin 12 to HIGH so LED turns on 
   delay(1000);                       // wait for a second
   digitalWrite(12, LOW);    // turn the pin 12 to LOW so LED turns off
-  delay(1000);                       // wait for a second
+  delay(1000);         // wait for a second
+  
+  digitalWrite(12, HIGH);   // turn the pin 12 to HIGH so LED turns on 
+  delay(1500);                       // wait for a second and a half
+  digitalWrite(12, LOW);    // turn the pin 12 to LOW so LED turns off
+  delay(500);                       // wait for a quarter of a second
 }
