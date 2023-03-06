@@ -31,19 +31,24 @@ void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(12, HIGH);   // turn the pin 12 to HIGH so LED turns on 
   digitalWrite(11, HIGH);   // turn the pin 11 to HIGH so LED turns on 
+  digitalWrite(10, HIGH);   // turn the pin 10 to HIGH so LED turns on 
   delay(1000);                       // wait for a second
   digitalWrite(12, LOW);    // turn the pin 12 to LOW so LED turns off
-   digitalWrite(11, LOW);    // turn the pin 11 to LOW so LED turns off
+  digitalWrite(11, LOW);    // turn the pin 11 to LOW so LED turns off
+  digitalWrite(10, LOW);    // turn the pin 10 to LOW so LED turns off
   delay(1000);         // wait for a second
   
   digitalWrite(12, HIGH);   // turn the pin 12 to HIGH so LED turns on 
   delay(1500);                       // wait for a second and a half
-  digitalWrite(12, LOW);    // turn the pin 12 to LOW so LED turns off
-  delay(500);                       // wait for a quarter of a second
+  digitalWrite(11, LOW);    // turn the pin 12 to LOW so LED turns off
+  delay(500);
+  digitalWrite(10, LOW);    // turn the pin 10 to LOW so LED turns off
+  delay(100);               // wait for a tenth of a second
 }
