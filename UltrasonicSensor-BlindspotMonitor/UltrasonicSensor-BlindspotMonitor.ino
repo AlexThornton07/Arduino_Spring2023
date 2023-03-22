@@ -9,13 +9,13 @@
  */
 
 
-#define trigPin 2
-2#define echoPin 3
-3#define LEDlampRed 4
-4#define  LEDlampYellow 5
-5#define LEDlampGreen 6 
-6#define soundbuzzer 7
-7int sound  = 500;
+int trigPin = 7;
+int echoPin = 6;
+int LEDlampRed = 9;
+int LEDlampBlue = 10;
+int LEDlampClear = 11;
+int soundbuzzer 3;
+int sound  = 500;
 8
 9
 10void setup() {
